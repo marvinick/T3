@@ -15,8 +15,17 @@
 
 
     //initiate player
-    var Player = function(symbol) {
-      this.symbol = symbol;
+    function Player (playerX, playerO) {
+      this.playerX = playerX;
+      this.playerO = playerO;
+    }
+
+    Player.prototype.markX = function() {
+        return "X";
+    }
+
+    Player.prototype.markO = function() {
+        return "O";
     }
 
     //set gameboard with 9 index positions

@@ -1,3 +1,15 @@
+describe('Player', function() {
+    it("returns the player's mark", function() {
+      var testPlayer = new Player("X");
+      expect(testPlayer.markX()).to.equal("X");
+   });
+
+    it("returns the player's mark", function() {
+      var testPlayer = new Player("O");
+      expect(testPlayer.markO()).to.equal("O");
+   });
+});
+
 describe("GameBoard", function() {
   it("returns X for the 3rd position in the array", function() {
     var testGameBoard = new GameBoard();
