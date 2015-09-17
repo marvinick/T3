@@ -1,10 +1,10 @@
 describe('Player', function() {
-    it("returns the player's mark", function() {
+    it("returns the player's mark X", function() {
       var testPlayer = new Player("X");
       expect(testPlayer.markX()).to.equal("X");
    });
 
-    it("returns the player's mark", function() {
+    it("returns the player's mark O", function() {
       var testPlayer = new Player("O");
       expect(testPlayer.markO()).to.equal("O");
    });
